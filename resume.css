@@ -9,8 +9,10 @@ body{ font: 16px Optima, Sans-Serif;
 #pwrap {width:800px; 
 		margin: 40px auto 60px;
 }
+#indexwrap{width: 900px;
+			margin: 200px auto 60px;}
 #picture{ float: right; 
-	      margin: -30px 0 0 0; 
+	      margin: -30px 0 10px 0; 
 	    }
 h1 { margin: 0 0 16px 0; 
 	padding: 0 0 16px 0; 
@@ -19,7 +21,11 @@ h1 { margin: 0 0 16px 0;
 	border-bottom: 1px 
 	solid #999; 
 }
-        
+#title{ text-align: center;
+		font-size: 72px;
+		padding: 50px 50px 50px 50px;
+}
+
 h2 {font-size: 20px; 
 	margin: 0 0 6px 0; 
 	position: relative; }
@@ -30,10 +36,15 @@ h2 span {
 		  font-size: 16px; color: #999; 
 		  font-weight: normal; 
 }
+#nav{text-align: center;
+	 padding: 5px 5px 5px 5px;
+	 font-size: px;
+}
 
 p { margin: 0 0 16px 0; }
 
-a { color: #999; text-decoration: none; 
+a { color: #999; 
+	text-decoration: none; 
 	border-bottom: 1px dotted #999; 
 }
 /* for highlighting */
@@ -62,6 +73,11 @@ dt {font-style: italic;
  #volunteer  {height: 375px;}
  #activity   {height: 165px;}
 /* adjustment and spacing */
-dd { width: 100px; float: left; }
-dd.clear { float: none; margin: 0; height: 15px; }
+dd { width: 100px; 
+	float: left; 
+}
+dd.clear { float: none; 
+	margin: 0; 
+	height: 15px; 
+}
 
