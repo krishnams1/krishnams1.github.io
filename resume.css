@@ -1,14 +1,21 @@
 /* This is the CSS file for Krishna Soni's Resume Page "resume.html" */
 
-body{ font: 16px Optima, Sans-Serif; 
+/* Use Local Fonts */
+@font-face{font-family: "Oregon LDO";
+		src: local("Oregon LDO") ,url(fonts/Oregon_LDO_Book.ttf);
+		}
+
+body{ font: 16px "Oregon LDO", Sans-Serif; 
 	  line-height: 24px; 
 	  background: url(images/background.jpg);
 }
 
 .clear{ clear:both;}
+
 #pwrap {width:800px; 
 		margin: 40px auto 60px;
 }
+
 #indexwrap{width: 900px;
 			margin: 200px auto 60px;}
 #picture{ float: right; 
@@ -42,7 +49,6 @@ h2 {font-size: 20px;
 
 p { margin: 0 0 16px 0 ; }
 #bio {width: 500px; float: left; 
- 	  font-family: Optima, Sans-Serif;  
 	  color: #666; }
 
 a { color: #999; 
