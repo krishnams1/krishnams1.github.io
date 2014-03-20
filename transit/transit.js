@@ -42,7 +42,7 @@ function myLocation(){
 	        //find closest stop
 	       // closestStop(myLoc);
 	        marker['infoWindow']= new google.maps.InfoWindow({
-	        	content: "You are here! ("+myLat.toFixed(4)+", "+myLng.toFixed(4)+")"+
+	        	content: "You are here! <br>("+myLat.toFixed(4)+", "+myLng.toFixed(4)+")<br>"+
 	        		"<br> The closest station to you is: "+"closestStop(myLoc)"+
 	        		"<br> and it is "+ dist_closest.toFixed(2)+ " miles away."
 	        });
