@@ -7,6 +7,16 @@
 //Distance to closest station
 
 
+
+
+
+
+
+
+
+
+
+
 var dist_closest =-1;
 
 function init()
@@ -33,7 +43,7 @@ function myLocation(){
                 myLat = position.coords.latitude;
 	            myLng = position.coords.longitude;
 	            var myLoc = new google.maps.LatLng(myLat, myLng);
-	            map.setCenter(myLoc);
+	            map.panTo(myLat,myLng);
 	            marker = new google.maps.Marker({
 	                position: myLoc,
 	                map: map,
