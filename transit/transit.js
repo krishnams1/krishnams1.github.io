@@ -391,10 +391,15 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-
   if(request.readyState == 4 && request.status == 200)
   {
-    TSchedule = JSON.parse(request.responseText);
+    try{
+      TSchedule = JSON.parse(request.responseText);
+    }
+    catch(TSchedule.error)
+    {
+      alert("Something went wrong, refresh the Page!");
+    }
     line_color = TSchedule.line;
     createLookup();
     createTLocations();
@@ -491,7 +496,6 @@ function parsePredictions(station_key)
     }
     // Make infoTable into string for marker
     parseTable();
-
 }
 
 /* Make information from infoTable in parsePredictions into readable table for marker */
