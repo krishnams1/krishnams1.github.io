@@ -393,13 +393,9 @@ function parseSched()
   TSchedule = new Object();
   if(request.readyState == 4 && request.status == 200)
   {
-    try{
-      TSchedule = JSON.parse(request.responseText);
-    }
-    catch(TSchedule.error)
-    {
-      alert("Something went wrong, refresh the Page!");
-    }
+  
+    TSchedule = JSON.parse(request.responseText);
+    if(TSchedule.error){alert("something is up");}
     line_color = TSchedule.line;
     createLookup();
     createTLocations();
