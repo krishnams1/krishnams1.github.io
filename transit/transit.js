@@ -348,7 +348,7 @@ function init()
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
   requestSched();
 
-  myLocation();
+  //myLocation();
 }
 
 /* Finds current location using geolocation utility */
@@ -394,7 +394,6 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-
 
   if(request.readyState == 4 && request.status == 200)
   {
