@@ -4,328 +4,329 @@
   Krishna Soni COMP 20 Ming
 */
 
-
-/* HardCode TStations into array. Would be easier with JQuery */
+/* Hard code TStations into array. Would be easier with JQuery -_____- */
 TStations = new Object();
 TStations= 
 [
   {
-    "Line":"Blue",
-    "Station":"Airport",
-    "TLat":42.374262,
-    "TLong":-71.030395
-  },
-  {
-    "Line":"Blue",
-    "Station":"Aquarium",
-    "TLat":42.359784,
-    "TLong":-71.051652
-  },
-  {
-    "Line":"Blue",
-    "Station":"Beachmont",
-    "TLat":42.39754234,
-    "TLong":-70.99231944
-  },
-  {
-    "Line":"Blue",
-    "Station":"Bowdoin",
-    "TLat":42.361365,
-    "TLong":-71.062037
-  },
-  {
-    "Line":"Blue",
-    "Station":"Government Center",
-    "TLat":42.359705,
-    "TLong":-71.05921499999999
-  },
-  {
-    "Line":"Blue",
-    "Station":"Maverick",
-    "TLat":42.36911856,
-    "TLong":-71.03952958000001
-  },
-  {
-    "Line":"Blue",
-    "Station":"Orient Heights",
-    "TLat":42.386867,
-    "TLong":-71.00473599999999
-  },
-  {
-    "Line":"Blue",
-    "Station":"Revere Beach",
-    "TLat":42.40784254,
-    "TLong":-70.99253321
-  },
-  {
-    "Line":"Blue",
-    "Station":"State Street",
-    "TLat":42.358978,
-    "TLong":-71.057598
-  },
-  {
-    "Line":"Blue",
-    "Station":"Suffolk Downs",
-    "TLat":42.39050067,
-    "TLong":-70.99712259
-  },
-  {
-    "Line":"Blue",
+    "Line":"blue",
     "Station":"Wonderland",
     "TLat":42.41342,
     "TLong":-70.991648
   },
   {
-    "Line":"Blue",
+    "Line":"blue",
+    "Station":"Revere Beach",
+    "TLat":42.40784254,
+    "TLong":-70.99253321
+  },  
+  {
+    "Line":"blue",
+    "Station":"Beachmont",
+    "TLat":42.39754234,
+    "TLong":-70.99231944
+  },
+  {
+    "Line":"blue",
+    "Station":"Suffolk Downs",
+    "TLat":42.39050067,
+    "TLong":-70.99712259
+  },  
+  {
+    "Line":"blue",
+    "Station":"Orient Heights",
+    "TLat":42.386867,
+    "TLong":-71.00473599999999
+  },
+  {
+    "Line":"blue",
     "Station":"Wood Island",
     "TLat":42.3796403,
     "TLong":-71.02286539000001
   },
   {
-    "Line":"Orange",
-    "Station":"Back Bay",
-    "TLat":42.34735,
-    "TLong":-71.075727
+    "Line":"blue",
+    "Station":"Airport",
+    "TLat":42.374262,
+    "TLong":-71.030395
   },
   {
-    "Line":"Orange",
-    "Station":"Chinatown",
-    "TLat":42.352547,
-    "TLong":-71.062752
+    "Line":"blue",
+    "Station":"Maverick",
+    "TLat":42.36911856,
+    "TLong":-71.03952958000001
   },
   {
-    "Line":"Orange",
-    "Station":"Community College",
-    "TLat":42.373622,
-    "TLong":-71.06953300000001
+    "Line":"blue",
+    "Station":"Aquarium",
+    "TLat":42.359784,
+    "TLong":-71.051652
   },
   {
-    "Line":"Orange",
-    "Station":"Downtown Crossing",
-    "TLat":42.355518,
-    "TLong":-71.060225
-  },
-  {
-    "Line":"Orange",
-    "Station":"Forest Hills",
-    "TLat":42.300523,
-    "TLong":-71.113686
-  },
-  {
-    "Line":"Orange",
-    "Station":"Green Street",
-    "TLat":42.310525,
-    "TLong":-71.10741400000001
-  },
-  {
-    "Line":"Orange",
-    "Station":"Haymarket",
-    "TLat":42.363021,
-    "TLong":-71.05829
-  },
-  {
-    "Line":"Orange",
-    "Station":"Jackson Square",
-    "TLat":42.323132,
-    "TLong":-71.099592
-  },
-  {
-    "Line":"Orange",
-    "Station":"Malden Center",
-    "TLat":42.426632,
-    "TLong":-71.07411
-  },
-  {
-    "Line":"Orange",
-    "Station":"Mass Ave",
-    "TLat":42.341512,
-    "TLong":-71.083423
-  },
-  {
-    "Line":"Orange",
-    "Station":"North Station",
-    "TLat":42.365577,
-    "TLong":-71.06129
-  },
-  {
-    "Line":"Orange",
-    "Station":"Oak Grove",
-    "TLat":42.43668,
-    "TLong":-71.07109699999999
-  },
-  {
-    "Line":"Orange",
-    "Station":"Roxbury Crossing",
-    "TLat":42.331397,
-    "TLong":-71.095451
-  },
-  {
-    "Line":"Orange",
-    "Station":"Ruggles",
-    "TLat":42.336377,
-    "TLong":-71.088961
-  },
-  {
-    "Line":"Orange",
+    "Line":"blue",
     "Station":"State Street",
     "TLat":42.358978,
     "TLong":-71.057598
   },
   {
-    "Line":"Orange",
-    "Station":"Stony Brook",
-    "TLat":42.317062,
-    "TLong":-71.104248
+    "Line":"blue",
+    "Station":"Government Center",
+    "TLat":42.359705,
+    "TLong":-71.05921499999999
   },
   {
-    "Line":"Orange",
-    "Station":"Sullivan",
-    "TLat":42.383975,
-    "TLong":-71.076994
+    "Line":"blue",
+    "Station":"Bowdoin",
+    "TLat":42.361365,
+    "TLong":-71.062037
+  },
+    {
+    "Line":"orange",
+    "Station":"Oak Grove",
+    "TLat":42.43668,
+    "TLong":-71.07109699999999
   },
   {
-    "Line":"Orange",
-    "Station":"Tufts Medical",
-    "TLat":42.349662,
-    "TLong":-71.063917
+    "Line":"orange",
+    "Station":"Malden Center",
+    "TLat":42.426632,
+    "TLong":-71.07411
   },
   {
-    "Line":"Orange",
+    "Line":"orange",
     "Station":"Wellington",
     "TLat":42.40237,
     "TLong":-71.077082
   },
   {
-    "Line":"Red",
+    "Line":"orange",
+    "Station":"Sullivan",
+    "TLat":42.383975,
+    "TLong":-71.076994
+  },
+  {
+    "Line":"orange",
+    "Station":"Community College",
+    "TLat":42.373622,
+    "TLong":-71.06953300000001
+  },
+  {
+    "Line":"orange",
+    "Station":"North Station",
+    "TLat":42.365577,
+    "TLong":-71.06129
+  },
+  {
+    "Line":"orange",
+    "Station":"Haymarket",
+    "TLat":42.363021,
+    "TLong":-71.05829
+  },
+  {
+    "Line":"orange",
+    "Station":"State Street",
+    "TLat":42.358978,
+    "TLong":-71.057598
+  },
+  {
+    "Line":"orange",
+    "Station":"Downtown Crossing",
+    "TLat":42.355518,
+    "TLong":-71.060225
+  },
+ {
+    "Line":"orange",
+    "Station":"Chinatown",
+    "TLat":42.352547,
+    "TLong":-71.062752
+  },
+  {
+    "Line":"orange",
+    "Station":"Tufts Medical",
+    "TLat":42.349662,
+    "TLong":-71.063917
+  },
+  {
+    "Line":"orange",
+    "Station":"Back Bay",
+    "TLat":42.34735,
+    "TLong":-71.075727
+  },
+   {
+    "Line":"orange",
+    "Station":"Mass Ave",
+    "TLat":42.341512,
+    "TLong":-71.083423
+  },
+  {
+    "Line":"orange",
+    "Station":"Ruggles",
+    "TLat":42.336377,
+    "TLong":-71.088961
+  },
+  {
+    "Line":"orange",
+    "Station":"Roxbury Crossing",
+    "TLat":42.331397,
+    "TLong":-71.095451
+  },
+  {
+    "Line":"orange",
+    "Station":"Jackson Square",
+    "TLat":42.323132,
+    "TLong":-71.099592
+  },
+  {
+    "Line":"orange",
+    "Station":"Stony Brook",
+    "TLat":42.317062,
+    "TLong":-71.104248
+  },
+  {
+    "Line":"orange",
+    "Station":"Green Street",
+    "TLat":42.310525,
+    "TLong":-71.10741400000001
+  },
+  {
+    "Line":"orange",
+    "Station":"Forest Hills",
+    "TLat":42.300523,
+    "TLong":-71.113686
+  },
+  {
+    "Line":"red",
     "Station":"Alewife",
     "TLat":42.395428,
     "TLong":-71.142483
   },
   {
-    "Line":"Red",
-    "Station":"Andrew",
-    "TLat":42.330154,
-    "TLong":-71.057655
-  },
-  {
-    "Line":"Red",
-    "Station":"Ashmont",
-    "TLat":42.284652,
-    "TLong":-71.06448899999999
-  },
-  {
-    "Line":"Red",
-    "Station":"Braintree",
-    "TLat":42.2078543,
-    "TLong":-71.0011385
-  },
-  {
-    "Line":"Red",
-    "Station":"Broadway",
-    "TLat":42.342622,
-    "TLong":-71.056967
-  },
-  {
-    "Line":"Red",
-    "Station":"Central Square",
-    "TLat":42.365486,
-    "TLong":-71.103802
-  },
-  {
-    "Line":"Red",
-    "Station":"Charles/MGH",
-    "TLat":42.361166,
-    "TLong":-71.070628
-  },
-  {
-    "Line":"Red",
+    "Line":"red",
     "Station":"Davis",
     "TLat":42.39674,
     "TLong":-71.121815
   },
   {
-    "Line":"Red",
-    "Station":"Downtown Crossing",
-    "TLat":42.355518,
-    "TLong":-71.060225
-  },
-  {
-    "Line":"Red",
-    "Station":"Fields Corner",
-    "TLat":42.300093,
-    "TLong":-71.061667
-  },
-  {
-    "Line":"Red",
-    "Station":"Harvard Square",
-    "TLat":42.373362,
-    "TLong":-71.118956
-  },
-  {
-    "Line":"Red",
-    "Station":"JFK/UMass",
-    "TLat":42.320685,
-    "TLong":-71.052391
-  },
-  {
-    "Line":"Red",
-    "Station":"Kendall/MIT",
-    "TLat":42.36249079,
-    "TLong":-71.08617653
-  },
-  {
-    "Line":"Red",
-    "Station":"North Quincy",
-    "TLat":42.275275,
-    "TLong":-71.029583
-  },
-  {
-    "Line":"Red",
-    "Station":"Park Street",
-    "TLat":42.35639457,
-    "TLong":-71.0624242
-  },
-  {
-    "Line":"Red",
+    "Line":"red",
     "Station":"Porter Square",
     "TLat":42.3884,
     "TLong":-71.11914899999999
   },
   {
-    "Line":"Red",
-    "Station":"Quincy Adams",
-    "TLat":42.233391,
-    "TLong":-71.007153
+    "Line":"red",
+    "Station":"Harvard Square",
+    "TLat":42.373362,
+    "TLong":-71.118956
   },
   {
-    "Line":"Red",
-    "Station":"Quincy Center",
-    "TLat":42.251809,
-    "TLong":-71.005409
+    "Line":"red",
+    "Station":"Central Square",
+    "TLat":42.365486,
+    "TLong":-71.103802
   },
   {
-    "Line":"Red",
-    "Station":"Savin Hill",
-    "TLat":42.31129,
-    "TLong":-71.053331
+    "Line":"red",
+    "Station":"Kendall/MIT",
+    "TLat":42.36249079,
+    "TLong":-71.08617653
   },
   {
-    "Line":"Red",
-    "Station":"Shawmut",
-    "TLat":42.29312583,
-    "TLong":-71.06573796000001
+    "Line":"red",
+    "Station":"Charles/MGH",
+    "TLat":42.361166,
+    "TLong":-71.070628
   },
   {
-    "Line":"Red",
+    "Line":"red",
+    "Station":"Park Street",
+    "TLat":42.35639457,
+    "TLong":-71.0624242
+  },
+  {
+    "Line":"red",
+    "Station":"Downtown Crossing",
+    "TLat":42.355518,
+    "TLong":-71.060225
+  },
+  {
+    "Line":"red",
     "Station":"South Station",
     "TLat":42.352271,
     "TLong":-71.05524200000001
   },
   {
-    "Line":"Red",
+    "Line":"red",
+    "Station":"Broadway",
+    "TLat":42.342622,
+    "TLong":-71.056967
+  },
+
+  {
+    "Line":"red",
+    "Station":"Andrew",
+    "TLat":42.330154,
+    "TLong":-71.057655
+  },
+  {
+    "Line":"red",
+    "Station":"JFK/UMass",
+    "TLat":42.320685,
+    "TLong":-71.052391
+  },
+  {
+    "Line":"red",
+    "Station":"North Quincy",
+    "TLat":42.275275,
+    "TLong":-71.029583
+  },
+  {
+    "Line":"red",
     "Station":"Wollaston",
     "TLat":42.2665139,
     "TLong":-71.0203369
+  },
+  {
+    "Line":"red",
+    "Station":"Quincy Center",
+    "TLat":42.251809,
+    "TLong":-71.005409
+  },
+  {
+    "Line":"red",
+    "Station":"Quincy Adams",
+    "TLat":42.233391,
+    "TLong":-71.007153
+  },
+    {
+    "Line":"red",
+    "Station":"Braintree",
+    "TLat":42.2078543,
+    "TLong":-71.0011385
+  },
+  {
+    "Line":"red",
+    "Station":"Savin Hill",
+    "TLat":42.31129,
+    "TLong":-71.053331
+  },
+
+  {
+    "Line":"red",
+    "Station":"Fields Corner",
+    "TLat":42.300093,
+    "TLong":-71.061667
+  },
+  {
+    "Line":"red",
+    "Station":"Shawmut",
+    "TLat":42.29312583,
+    "TLong":-71.06573796000001
+  },
+  {
+    "Line":"red",
+    "Station":"Ashmont",
+    "TLat":42.284652,
+    "TLong":-71.06448899999999
   }
 ];
 
@@ -335,6 +336,7 @@ TStations=
 
 //Distance to closest station
 var dist_closest =-1;
+var line_color = new Object();
 
 function init()
 {
@@ -344,16 +346,11 @@ function init()
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
-  //requestTimes();
-  //myLocation();
-  createTLocations();
+  requestSched();
+  myLocation();
 }
 
-
-
-
 /* Finds current location using geolocation utility */
-
 function myLocation(){
   if(navigator.geolocation)
   {
@@ -368,11 +365,11 @@ function myLocation(){
                   title: "Your Location"
               });
           //find closest stop
-         // closestStop(myLoc);
+          closestStop(myLoc);
           marker['infoWindow']= new google.maps.InfoWindow({
             content: "You are here! ("+myLat.toFixed(4)+", "+myLng.toFixed(4)+")"+
-              "<br> The closest station to you is: "+"closestStop(myLoc)"+
-                 " and it is" + dist_closest.toFixed(2)+ " miles away."
+              "<br> The closest station to you is: "+closestStop(myLoc)+
+                 "<br> It is " + dist_closest.toFixed(2)+ " miles away."
               });
           
           google.maps.event.addListener(marker, 'click', function() {
@@ -384,22 +381,25 @@ function myLocation(){
 }
 
 
-function requestTimes()
+function requestSched()
 {
   request =  new XMLHttpRequest();
   request.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json",true);
   request.send(null);
-  request.onreadystatechange = parseTimes;
+  request.onreadystatechange = parseSched;
 }
 
 
-function parseTimes()
+function parseSched()
 {
-  if(request.readyState == 4 && request.status == 400)
+  TSchedule = new Object();
+
+  if(request.readyState == 4 && request.status == 200)
   {
     TSchedule = JSON.parse(request.responseText);
+    line_color = TSchedule.line;
     createTLocations();
-    //drawLine();
+    drawLine();
   }
   else if(request.status == 0)
   {
@@ -407,34 +407,54 @@ function parseTimes()
   }
 }
 
+
+/* Create Markers for TStations depending on response text */
 function createTLocations()
 {
-  // Create Markers depending on response Text
-  for(i=0; i< TStations.length; i++)
-  {
-    curLoc =  new google.maps.LatLng(TStations[i].TLat, TStations[i].TLong);
-    map.setCenter(curLoc);
-    var markerImage ={
-      url: 'images/blue-pin.png',
-      size: new google.maps.Size(71,71),
-      origin: new google.maps.Point(0,0),
-      anchor: new google.maps.Point(10,25),
-      scaledSize:new google.maps.Size(25,25)
-    }
-    var curMarker = new google.maps.Marker({
-      position: curLoc,
-      map: map,
-      title: TStations[i].Station,
-      icon: markerImage
-    });
+  var image_file = new Object();
 
-    curMarker['infoWindow'] = new google.maps.InfoWindow({
-      content: "This Station is: "+TStations[i].Station
-    });
-    
-    google.maps.event.addListener(curMarker, 'click', function() {
-      this['infoWindow'].open(map, this)
-    }); 
+  switch(line_color){
+    case "orange": 
+        image_file = 'images/orange-pin.png';
+        break;
+    case "blue":
+        image_file = 'images/blue-pin.png';
+        break;
+    case "red":
+        image_file = 'images/red-pin.png';
+        break;
+    default:
+        break;
+  }
+
+    for(i=0; i< TStations.length; i++)
+    {
+        if(line_color == TStations[i].Line)
+        {
+          curLoc =  new google.maps.LatLng(TStations[i].TLat, TStations[i].TLong);
+
+          var markerImage ={
+            url: image_file,
+            size: new google.maps.Size(70,85),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(10,30),
+            scaledSize:new google.maps.Size(25,35)
+          }
+          var curMarker = new google.maps.Marker({
+            position: curLoc,
+            map: map,
+            title: TStations[i].Station,
+            icon: markerImage
+          });
+
+          curMarker['infoWindow'] = new google.maps.InfoWindow({
+            content: "This Station is: "+TStations[i].Station
+          });
+          
+          google.maps.event.addListener(curMarker, 'click', function() {
+            this['infoWindow'].open(map, this)
+        }); 
+      }
   }
 }
 
@@ -442,18 +462,103 @@ function createTLocations()
 
 
 
+/* Draws polylines for Tstations, handles fork on Red line (messy, would make cleaner later) */
 function drawLine()
 {
-  return;
+  TStationsPathLoc1= new Array();
+  TStationsPathLoc2= new Array();
+  fork_status = true;
+  polyLine_color = new Object();
+
+  switch(line_color)
+  {
+      case "red":
+          polyLine_color = '#FF0000';
+          break;
+      case "blue":
+          polyLine_color = '#1919FF';
+          break;
+      case "orange":
+          polyLine_color = '#FFA500';
+          break;
+      default: 
+          alert("Something went wrong!");
+          break;
+  }
+
+  for(i=0;i<TStations.length; i++)
+  {
+    if(line_color == TStations[i].Line)
+    {
+
+      //always push to end of array to keep continuous (we're assuming Tstation in order)
+      if(fork_status){
+        TStationsPathLoc1.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+          if(line_color == "red" && TStations[i].Station =="JFK/UMass"){
+            TStationsPathLoc2.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+           }
+          if(line_color == "red" && TStations[i].Station == "Braintree")
+          {
+            fork_status = false;
+          }
+      }
+      else
+      {
+        TStationsPathLoc2.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+      }
+    }
+  }
+
+  var TPath = new google.maps.Polyline({
+      path: TStationsPathLoc1,
+      strokeColor: polyLine_color,
+      strokeOpacity: 1.0,
+      strokeWeight: 2
+  });
+
+  TPath.setMap(map);
+
+  if(line_color =="red"){
+    var TPath2 = new google.maps.Polyline({
+      path: TStationsPathLoc2,
+      strokeColor: polyLine_color,
+      strokeOpacity: 1.0,
+      strokeWeight: 2
+    });
+
+    TPath2.setMap(map);
+
+  }
 }
-/*
-function closestStop()
+
+
+
+
+
+function closestStop(myLocation)
 {
+  var closest = -1; // index of closest station
+  var myLat   = myLocation.lat();
+  var myLng   = myLocation.lng();
 
+  for(i=0; i<TStations.length; i++)
+  {
+    if(line_color == TStations[i].Line)
+    {
+      d = getDistance(myLat,myLng,TStations[i].TLat,TStations[i].TLong)
+      if(closest == -1 || d<getDistance(myLat,myLng,TStations[closest].TLat,TStations[closest].TLong))
+      {
+        closest = i;
+      }
 
+    }
+  }
+
+  dist_closest = getDistance(myLat,myLng,TStations[closest].TLat,TStations[closest].TLong);
+  return TStations[closest].Station;
 
 }
-*/
+
 
 
 // get distance between two points
@@ -463,7 +568,7 @@ function getDistance(lat1, lng1, lat2, lng2) {
     return this * Math.PI / 180;
   }
 
-  var eathRadius = 6371;
+  var earthRadius = 6371;
   var x1 = lat2-lat1;
   var dLat = x1.toRad();
 
@@ -481,7 +586,5 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
     return d;
 }
-
-
 
 
