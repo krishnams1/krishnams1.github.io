@@ -525,8 +525,8 @@ function drawLine()
   var TPath = new google.maps.Polyline({
       path: TStationsPathLoc1,
       strokeColor: polyLine_color,
-      strokeOpacity: 1.0,
-      strokeWeight: 2
+      strokeOpacity: 0.75,
+      strokeWeight: 3
   });
 
   TPath.setMap(map);
@@ -535,8 +535,8 @@ function drawLine()
     var TPath2 = new google.maps.Polyline({
       path: TStationsPathLoc2,
       strokeColor: polyLine_color,
-      strokeOpacity: 1.0,
-      strokeWeight: 2
+      strokeOpacity: 0.75,
+      strokeWeight: 3
     });
 
     TPath2.setMap(map);
