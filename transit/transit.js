@@ -392,7 +392,7 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-  if(request.readyState == 4 && request.status == 200 )
+  if(request.readyState == 4 && request.status == 200)
   {
     TSchedule = JSON.parse(request.responseText);
     line_color = TSchedule.line;
@@ -400,7 +400,7 @@ function parseSched()
     createTLocations();
     drawLine();
   }
-  else if(request.readyState == 4 && request.status == 500)
+  else //if(request.readyState == 4 && request.status == 500)
   {
     alert("Error! Try refreshing the page");
   }
