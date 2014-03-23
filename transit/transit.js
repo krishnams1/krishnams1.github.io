@@ -495,11 +495,11 @@ function parsePredictions(station_key)
 function parseTable()
 {
    predTable = new String();
-   predTable = "Destination           Time <br>"
+   predTable = "Destination (Time) <br>"
 
    for(i=0;i<infoTable.length;i++)
    {
-      predTable = predTable.concat(infoTable[i].Destination +"   " +infoTable[i].Time+"<br>");
+      predTable = predTable.concat(infoTable[i].Destination +"   (" +infoTable[i].Time+")<br>");
    }
    console.log(predTable);
    return predTable;
