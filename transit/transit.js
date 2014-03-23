@@ -347,6 +347,7 @@ function init()
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
   requestSched();
+
   myLocation();
 }
 
@@ -394,10 +395,12 @@ function parseSched()
 {
   TSchedule = new Object();
 
+
   if(request.readyState == 4 && request.status == 200)
   {
     TSchedule = JSON.parse(request.responseText);
-    line_color = TSchedule.line;
+    polyLine_colorolor = TSchedule.line;
+    createLookup();
     createTLocations();
     drawLine();
   }
@@ -406,6 +409,20 @@ function parseSched()
     alert("Error! Try refreshing the page")
   }
 }
+
+/* Make TStations a lookup array with station names as key */
+function createLookup()
+{
+  TStationsLookup = new Array();
+  for(i=0; i<TStations.length; i++)
+  {
+    TStationsLookup[TStations[i].Station] = TStations[i];
+  }
+}
+
+
+
+
 
 
 /* Create Markers for TStations depending on response text */
@@ -427,11 +444,11 @@ function createTLocations()
         break;
   }
 
-    for(i=0; i< TStations.length; i++)
+    for(key in TStationsLookup)
     {
-        if(line_color == TStations[i].Line)
+        if(line_color == TStationsLookup[key].Line)
         {
-          curLoc =  new google.maps.LatLng(TStations[i].TLat, TStations[i].TLong);
+          curLoc =  new google.maps.LatLng(TStationsLookup[key].TLat, TStationsLookup[key].TLong);
 
           var markerImage ={
             url: image_file,
@@ -443,12 +460,12 @@ function createTLocations()
           var curMarker = new google.maps.Marker({
             position: curLoc,
             map: map,
-            title: TStations[i].Station,
+            title: TStationsLookup[key].Station,
             icon: markerImage
           });
 
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "This Station is: "+TStations[i].Station
+            content: "This Station is: "+TStationsLookup[key].Station
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
@@ -486,25 +503,25 @@ function drawLine()
           break;
   }
 
-  for(i=0;i<TStations.length; i++)
+  for(key in TStationsLookup)
   {
-    if(line_color == TStations[i].Line)
+    if(line_color == TStationsLookup[key].Line)
     {
 
       //always push to end of array to keep continuous (we're assuming Tstation in order)
       if(fork_status){
-        TStationsPathLoc1.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+        TStationsPathLoc1.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
           if(line_color == "red" && TStations[i].Station =="JFK/UMass"){
-            TStationsPathLoc2.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+            TStationsPathLoc2.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
            }
-          if(line_color == "red" && TStations[i].Station == "Braintree")
+          if(line_color == "red" && TStationsLookup[key].Station == "Braintree")
           {
             fork_status = false;
           }
       }
       else
       {
-        TStationsPathLoc2.push(new google.maps.LatLng(TStations[i].TLat,TStations[i].TLong))
+        TStationsPathLoc2.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
       }
     }
   }
@@ -532,21 +549,18 @@ function drawLine()
 }
 
 
-
-
-
 function closestStop(myLocation)
 {
   var closest = -1; // index of closest station
   var myLat   = myLocation.lat();
   var myLng   = myLocation.lng();
 
-  for(i=0; i<TStations.length; i++)
+  for(key in TStationsLookup)
   {
-    if(line_color == TStations[i].Line)
+    if(line_color == TStationsLookup[key].Line)
     {
-      d = getDistance(myLat,myLng,TStations[i].TLat,TStations[i].TLong)
-      if(closest == -1 || d<getDistance(myLat,myLng,TStations[closest].TLat,TStations[closest].TLong))
+      d = getDistance(myLat,myLng,TStationsLookup[key].TLat,TStationsLookup[key].TLong)
+      if(closest == -1 || d<getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong))
       {
         closest = i;
       }
@@ -554,11 +568,10 @@ function closestStop(myLocation)
     }
   }
 
-  dist_closest = getDistance(myLat,myLng,TStations[closest].TLat,TStations[closest].TLong);
-  return TStations[closest].Station;
+  dist_closest = getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong);
+  return TStationsLookup[closest].Station;
 
 }
-
 
 
 // get distance between two points
