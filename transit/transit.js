@@ -461,7 +461,7 @@ function createTLocations()
 
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "This Station is: "+TStationsLookup[key].Station+"<br>"+ infoTable
+            content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
@@ -488,8 +488,10 @@ function parsePredictions(station_key)
         }
       }
     }
-    console.log(infoTable[1].Time);
 }
+
+
+
 
 /* Draws polylines for Tstations, handles fork on Red line (messy, would make cleaner later) */
 function drawLine()
