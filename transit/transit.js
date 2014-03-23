@@ -461,6 +461,7 @@ function createTLocations()
 
           parsePredictions(key);
           predTable = parseTable;
+          console.log(predTable);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "<u>"+TStationsLookup[key].Station+"</u><br> Predictions (Destination - Time) <br><br>"
           });
