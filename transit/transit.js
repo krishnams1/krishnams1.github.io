@@ -424,7 +424,7 @@ function createLookup()
 function createTLocations()
 {
   var image_file = new Object();
-  var predTable  = new Object();
+  predTable  = new String();
 
   switch(line_color){
     case "orange": 
