@@ -509,7 +509,7 @@ function drawLine()
       //always push to end of array to keep continuous (we're assuming Tstation in order)
       if(fork_status){
         TStationsPathLoc1.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
-          if(line_color == "red" && TStations[i].Station =="JFK/UMass"){
+          if(line_color == "red" && TStationsLookup[key].Station =="JFK/UMass"){
             TStationsPathLoc2.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
            }
           if(line_color == "red" && TStationsLookup[key].Station == "Braintree")
