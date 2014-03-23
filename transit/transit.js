@@ -495,7 +495,7 @@ function parsePredictions(station_key)
 /* Make information from infoTable in parsePredictions into readable table for marker */
 function parseTable()
 {
-   predTable = ""
+   predTable = "";
 
    for(i=0;i<infoTable.length;i++)
    {
