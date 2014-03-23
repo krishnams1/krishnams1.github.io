@@ -461,7 +461,7 @@ function createTLocations()
 
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "<u>"+TStationsLookup[key].Station+"</u><br>Predictions<br><br> <table><tr><td><i>Destination</i></td> <td><i>Time Until Arrival</i></td><tr>"
+            content: "<u>"+TStationsLookup[key].Station+"</u><br>Predictions:<br> <table><tr><td><i>Destination</i></td> <td><i>Time Until Arrival</i></td><tr>"
             +predTable+"</table>"
           });
           
@@ -500,7 +500,7 @@ function parseTable()
 
    for(i=0;i<infoTable.length;i++)
    {
-      predTable = predTable.concat("<tr><td>"+infoTable[i].Destination+"</td><td>" +infoTable[i].Time+"</td></tr>");
+      predTable = predTable.concat("<tr><td>"+infoTable[i].Destination+"  </td><td>" +infoTable[i].Time+"</td></tr>");
    }
    return predTable;
 }
