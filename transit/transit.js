@@ -334,8 +334,8 @@ TStations=
 //Distance to closest station
 var dist_closest =-1;
 var line_color = new Object();
-//error script in ming's rodeo app
-JSONerr =""{"error":"So much fail"}"";
+
+
 
 function init()
 {
@@ -393,7 +393,7 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-  if(request.readyState == 4 && request.status == 200 & request.responseText != JSONerr)
+  if(request.readyState == 4 && request.status == 200 
   {
     TSchedule = JSON.parse(request.responseText);
     line_color = TSchedule.line;
@@ -401,7 +401,7 @@ function parseSched()
     createTLocations();
     drawLine();
   }
-  else
+  else if(request.status == 0)
   {
     alert("Error! Try refreshing the page")
   }
@@ -418,8 +418,6 @@ function createLookup()
     }
   }
 }
-
-
 
 /* Create Markers for TStations depending on response text */
 function createTLocations()
@@ -463,7 +461,7 @@ function createTLocations()
 
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "<u>"+TStationsLookup[key].Station+"</u><br> Predictions (Destination - Time) <br><br>"+predTable
+            content: "<u>"+TStationsLookup[key].Station+"</u><br> Predictions (Destination - Time Until Arrival) <br><br>"+predTable
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
