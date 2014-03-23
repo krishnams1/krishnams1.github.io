@@ -377,6 +377,10 @@ function myLocation(){
               }); 
     });
   }
+  else
+  {
+    alert("Geolocation Not supported on this browser!");
+  }
 
 }
 
@@ -400,7 +404,7 @@ function parseSched()
     createTLocations();
     drawLine();
   }
-  else //if(request.readyState == 4 && request.status == 500)
+  else if(request.readyState == 4 && request.status == 500)
   {
     alert("Error! Try refreshing the page");
   }
