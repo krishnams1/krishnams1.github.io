@@ -331,9 +331,6 @@ TStations=
 ];
 
 
-
-
-
 //Distance to closest station
 var dist_closest =-1;
 var line_color = new Object();
@@ -462,6 +459,7 @@ function createTLocations()
             icon: markerImage
           });
 
+          parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "This Station is: "+TStationsLookup[key].Station
           });
@@ -474,8 +472,23 @@ function createTLocations()
 }
 
 
-
-
+function parsePredictions(station_key)
+{
+    infoTable = new Array();
+    for(i=0;i<TSchedule.schedule.length; i++)
+    {
+      for(j=0;j<TSchedule.schedule.Predictions.length; j++)
+      {
+        if(TSchedule.schedule[i].Predictions[j].stop == station_key)
+        {
+          infoTable[j] = {
+            "Destination" : TSchedule.schedule[i].Destination,
+            "Time" : Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"min "+Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"s "
+          }
+        }
+      }
+    }
+}
 
 /* Draws polylines for Tstations, handles fork on Red line (messy, would make cleaner later) */
 function drawLine()
@@ -538,12 +551,9 @@ function drawLine()
       strokeOpacity: 0.75,
       strokeWeight: 5
     });
-
     TPath2.setMap(map);
-
   }
 }
-
 
 function closestStop(myLocation)
 {
@@ -560,15 +570,11 @@ function closestStop(myLocation)
       {
         closest = key;
       }
-
     }
   }
-
   dist_closest = getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong);
   return TStationsLookup[closest].Station;
-
 }
-
 
 // get distance between two points
 function getDistance(lat1, lng1, lat2, lng2) {
@@ -582,7 +588,6 @@ function getDistance(lat1, lng1, lat2, lng2) {
   var dLat = x1.toRad();
 
   var x2 = lng2-lng1;
-
   var dLng = x2.toRad();
 
   var a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
@@ -595,5 +600,3 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
     return d;
 }
-
-
