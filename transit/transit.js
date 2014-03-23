@@ -488,7 +488,7 @@ function parsePredictions(station_key)
         }
       }
     }
-    console.log(infoTable[1]);
+    console.log(infoTable[1].Time);
 }
 
 /* Draws polylines for Tstations, handles fork on Red line (messy, would make cleaner later) */
