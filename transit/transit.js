@@ -393,7 +393,7 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-  if(request.readyState == 4 && request.status == 200 
+  if(request.readyState == 4 && request.status == 200 )
   {
     TSchedule = JSON.parse(request.responseText);
     line_color = TSchedule.line;
