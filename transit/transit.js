@@ -424,7 +424,7 @@ function createLookup()
 function createTLocations()
 {
   var image_file = new Object();
-  var predTable  = new String();
+  var predTable  = new Object();
   switch(line_color){
     case "orange": 
         image_file = 'images/orange-pin.png';
@@ -495,7 +495,6 @@ function parsePredictions(station_key)
 /* Make information from infoTable in parsePredictions into readable table for marker */
 function parseTable()
 {
-
    predTable = new String();
    predTable = "Destination           Time <br>"
 
