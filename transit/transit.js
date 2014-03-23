@@ -482,10 +482,10 @@ function parsePredictions(station_key)
       {
         if(TSchedule.schedule[i].Predictions[j].Stop == station_key)
         {
-          infoTable[j] = {
+          infoTable.push({
             "Destination" : TSchedule.schedule[i].Destination,
             "Time" : Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"min "+TSchedule.schedule[i].Predictions[j].Seconds%60+"s "
-          }
+          });
         }
       }
     }
