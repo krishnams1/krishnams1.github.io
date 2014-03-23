@@ -500,7 +500,7 @@ function parseTable()
 
    for(i=0;i<infoTable.length;i++)
    {
-      predTable = predTable.concat("<tr><td>"+infoTable[i].Destination+"</td>" +infoTable[i].Time+"</td></tr>");
+      predTable = predTable.concat("<tr><td>"+infoTable[i].Destination+"</td><td>" +infoTable[i].Time+"</td></tr>");
    }
    return predTable;
 }
