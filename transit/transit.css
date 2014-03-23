@@ -13,9 +13,17 @@ body{
    height:100%;
 }
 
-table 
-{
+table {
 	width:100%;
 	text-align: center;
 	padding: 5px;
+}
+
+#station_title{
+	text-decoration: underline;
+}
+
+#table_title
+{
+	font-style: italic;
 }

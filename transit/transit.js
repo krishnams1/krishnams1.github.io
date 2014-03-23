@@ -464,7 +464,7 @@ function createTLocations()
 
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "<u>"+TStationsLookup[key].Station+"</u><br>Predictions:<br> <table><tr><td><i>Destination</i></td> <td><i>Time Until Arrival</i></td><tr>"
+            content: "<p id="station_title">"+TStationsLookup[key].Station+"</p><br>Predictions:<br> <table><tr><td id="table_title">Destination</td> <td id="table_title">Time Until Arrival</i></td><tr>"
             +predTable+"</table>"
           });
           
