@@ -462,7 +462,7 @@ function createTLocations()
           parsePredictions(key);
           parseTable();
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br><br>"+"Destination (Time) <br>Oak Grove   (2min 58s)<br>Forest Hills   (0min 14s)<br>Oak Grove   (5min 53s)<br>Oak Grove   (16min 45s)<br>Forest Hills   (3min 9s)<br>Forest Hills   (14min 1s)<br>Forest Hills   (18min 56s)<br>"
+            content: "This Station is: "+TStationsLookup[key].Station+"<br> <u>Predictions<\u><br>"+"Destination (Time) <br><br>Oak Grove   (2min 58s)<br>Forest Hills   (0min 14s)<br>Oak Grove   (5min 53s)<br>Oak Grove   (16min 45s)<br>Forest Hills   (3min 9s)<br>Forest Hills   (14min 1s)<br>Forest Hills   (18min 56s)<br>"
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
