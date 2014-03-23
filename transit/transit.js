@@ -449,7 +449,7 @@ function createTLocations()
             url: image_file,
             size: new google.maps.Size(70,85),
             origin: new google.maps.Point(0,0),
-            anchor: new google.maps.Point(10,30),
+            anchor: new google.maps.Point(10,25),
             scaledSize:new google.maps.Size(25,35)
           }
           var curMarker = new google.maps.Marker({
