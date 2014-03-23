@@ -477,7 +477,7 @@ function parsePredictions(station_key)
     infoTable = new Array();
     for(i=0;i<TSchedule.schedule.length; i++)
     {
-      for(j=0;j<TSchedule.schedule.Predictions.length; j++)
+      for(j=0;j<TSchedule.schedule[i].Predictions.length; j++)
       {
         if(TSchedule.schedule[i].Predictions[j].stop == station_key)
         {
