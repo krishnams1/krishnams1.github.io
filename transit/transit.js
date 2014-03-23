@@ -462,7 +462,7 @@ function createTLocations()
           parsePredictions(key);
           parseTable();
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"+predTable
+            content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"+"Destination           Time <br>Alewife   0min 16s <br>Ashmont   19min 47s <br>Alewife   19min 16s <br>Ashmont   5min 59s <br>"
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
