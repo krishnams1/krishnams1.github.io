@@ -462,6 +462,7 @@ function createTLocations()
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"
+            +parseTable
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
@@ -488,6 +489,21 @@ function parsePredictions(station_key)
         }
       }
     }
+}
+
+/* Make information from infoTable in parsePredictions into readable table for marker */
+function parseTable()
+{
+
+   predTable = new String();
+   predTable = "Destination      Time <br>"
+
+   for(i=0;i<infoTable.length;i++)
+   {
+      predTable.concat(infoTable[i].Destination +"   " +infoTable[i].Time+"<br>");
+   }
+
+   return predTable;
 }
 
 
