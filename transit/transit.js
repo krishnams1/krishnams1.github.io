@@ -334,6 +334,8 @@ TStations=
 //Distance to closest station
 var dist_closest =-1;
 var line_color = new Object();
+//error script in ming's rodeo app
+var JSONerr ="{"error":"So much fail"}";
 
 function init()
 {
@@ -391,7 +393,7 @@ function requestSched()
 function parseSched()
 {
   TSchedule = new Object();
-  if(request.readyState == 4 && request.status == 200)
+  if(request.readyState == 4 && request.status == 200 & request.responseText != JSONerr)
   {
     TSchedule = JSON.parse(request.responseText);
     line_color = TSchedule.line;
@@ -399,7 +401,7 @@ function parseSched()
     createTLocations();
     drawLine();
   }
-  else if (request.readyState == 4 && request.status == 500)
+  else
   {
     alert("Error! Try refreshing the page")
   }
