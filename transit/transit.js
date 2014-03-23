@@ -330,7 +330,6 @@ TStations=
   }
 ];
 
-
 //Distance to closest station
 var dist_closest =-1;
 var line_color = new Object();
@@ -341,7 +340,7 @@ function init()
 {
   initMapSetting = {
     center: new google.maps.LatLng(42.4069, -71.1198),
-    zoom: 15,
+    zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
