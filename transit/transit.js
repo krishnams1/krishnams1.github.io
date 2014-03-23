@@ -340,7 +340,7 @@ function init()
 {
   initMapSetting = {
     center: new google.maps.LatLng(42.4069, -71.1198),
-    zoom: 11,
+    zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
