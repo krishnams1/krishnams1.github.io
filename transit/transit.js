@@ -424,7 +424,7 @@ function createLookup()
 function createTLocations()
 {
   var image_file = new Object();
-
+  var predTable  = new String();
   switch(line_color){
     case "orange": 
         image_file = 'images/orange-pin.png';
@@ -460,10 +460,10 @@ function createTLocations()
           });
 
           parsePredictions(key);
-
+          predTable = parseTable;
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"
-            +parseTable()
+            +predTable
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
