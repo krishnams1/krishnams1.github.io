@@ -502,7 +502,7 @@ function parseTable()
    {
       predTable.concat(infoTable[i].Destination +"   " +infoTable[i].Time+"<br>");
    }
-
+   console.log(predTable);
    return predTable;
 }
 
