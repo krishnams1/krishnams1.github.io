@@ -393,14 +393,13 @@ function parseSched()
   TSchedule = new Object();
   if(request.readyState == 4 && request.status == 200)
   {
-  
     TSchedule = JSON.parse(request.responseText);
     line_color = TSchedule.line;
     createLookup();
     createTLocations();
     drawLine();
   }
-  else
+  else if (request.readyState == 4 && request.status == 500)
   {
     alert("Error! Try refreshing the page")
   }
