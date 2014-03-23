@@ -380,7 +380,6 @@ function myLocation(){
 
 }
 
-
 function requestSched()
 {
   request =  new XMLHttpRequest();
@@ -401,9 +400,9 @@ function parseSched()
     createTLocations();
     drawLine();
   }
-  else if(request.status == 0)
+  else if(xhr.readyState == 4 && xhr.status == 500)
   {
-    alert("Error! Try refreshing the page")
+    alert("Error! Try refreshing the page");
   }
 }
 
