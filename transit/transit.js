@@ -335,7 +335,7 @@ TStations=
 var dist_closest =-1;
 var line_color = new Object();
 //error script in ming's rodeo app
-var JSONerr ="{"error":"So much fail"}";
+JSONerr =""{"error":"So much fail"}"";
 
 function init()
 {
