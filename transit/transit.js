@@ -398,7 +398,7 @@ function parseSched()
   if(request.readyState == 4 && request.status == 200)
   {
     TSchedule = JSON.parse(request.responseText);
-    polyLine_colorolor = TSchedule.line;
+    line_color = TSchedule.line;
     createLookup();
     createTLocations();
     drawLine();
@@ -418,9 +418,6 @@ function createLookup()
     TStationsLookup[TStations[i].Station] = TStations[i];
   }
 }
-
-
-
 
 
 
@@ -505,7 +502,6 @@ function drawLine()
   {
     if(line_color == TStationsLookup[key].Line)
     {
-
       //always push to end of array to keep continuous (we're assuming Tstation in order)
       if(fork_status){
         TStationsPathLoc1.push(new google.maps.LatLng(TStationsLookup[key].TLat,TStationsLookup[key].TLong))
