@@ -345,7 +345,6 @@ function init()
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
-  
   requestSched();
 }
 
@@ -389,8 +388,6 @@ function requestSched()
   request.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json",true);
   request.onreadystatechange = parseSched;
   request.send(null);
-  // moved my location here to prevent execution if 500 error occurs
-  myLocation();
 }
 
 
@@ -404,6 +401,8 @@ function parseSched()
     createLookup();
     createTLocations();
     drawLine();
+    // moved my location here to prevent execution if 500 error occurs
+    myLocation();
     
   }
   else if(request.readyState == 4 && request.status == 500)
