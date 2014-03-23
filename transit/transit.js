@@ -464,8 +464,8 @@ function createTLocations()
 
           parsePredictions(key);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
-            content: "<p id="station_title">"+TStationsLookup[key].Station+"</p><br>Predictions:<br> <table><tr><td id="table_title">Destination</td> <td id="table_title">Time Until Arrival</i></td><tr>"
-            +predTable+"</table>"
+            content: "<div><p id="station_title">"+TStationsLookup[key].Station+"</p><br><p>Predictions:</p><br> <table><tr><td id="table_title">Destination</td> <td id="table_title">Time Until Arrival</i></td><tr>"
+            +predTable+"</table></div>"
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
