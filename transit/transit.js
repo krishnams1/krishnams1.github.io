@@ -526,7 +526,7 @@ function drawLine()
       path: TStationsPathLoc1,
       strokeColor: polyLine_color,
       strokeOpacity: 0.75,
-      strokeWeight: 3
+      strokeWeight: 5
   });
 
   TPath.setMap(map);
@@ -536,7 +536,7 @@ function drawLine()
       path: TStationsPathLoc2,
       strokeColor: polyLine_color,
       strokeOpacity: 0.75,
-      strokeWeight: 3
+      strokeWeight: 5
     });
 
     TPath2.setMap(map);
