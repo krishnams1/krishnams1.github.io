@@ -347,7 +347,7 @@ function init()
   map = new google.maps.Map(document.getElementById("map_canvas"), initMapSetting);   
   
   requestSched();
-  //myLocation();
+  myLocation();
 }
 
 /* Finds current location using geolocation utility */
@@ -406,6 +406,7 @@ function parseSched()
   }
   else if(request.readyState == 4 && request.status == 500)
   {
+    console.log("Getting error 500");
     alert("Error! Try refreshing the page");
   }
 }
@@ -585,7 +586,7 @@ function closestStop(myLocation)
     if(line_color == TStationsLookup[key].Line)
     {
       d = getDistance(myLat,myLng,TStationsLookup[key].TLat,TStationsLookup[key].TLong)
-      if(closest == -1 || d<getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong))
+      if(closest == -1 || d < getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong))
       {
         closest = key;
       }
@@ -619,5 +620,3 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
     return d;
 }
-
-
