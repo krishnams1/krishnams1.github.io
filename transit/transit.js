@@ -415,7 +415,9 @@ function createLookup()
   TStationsLookup = new Array();
   for(i=0; i<TStations.length; i++)
   {
-    TStationsLookup[TStations[i].Station] = TStations[i];
+    if(line_color == TStations[i].Line){
+      TStationsLookup[TStations[i].Station] = TStations[i];
+    }
   }
 }
 
