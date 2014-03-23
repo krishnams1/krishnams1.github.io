@@ -479,7 +479,7 @@ function parsePredictions(station_key)
     {
       for(j=0;j<TSchedule.schedule[i].Predictions.length; j++)
       {
-        if(TSchedule.schedule[i].Predictions[j].stop == station_key)
+        if(TSchedule.schedule[i].Predictions[j].Stop == station_key)
         {
           infoTable[j] = {
             "Destination" : TSchedule.schedule[i].Destination,
