@@ -406,8 +406,8 @@ function parseSched()
   }
   else if(request.readyState == 4 && request.status == 500)
   {
-    console.log("Getting error 500");
     alert("Error! Try refreshing the page");
+    return;
   }
 }
 
