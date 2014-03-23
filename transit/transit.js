@@ -558,7 +558,7 @@ function closestStop(myLocation)
       d = getDistance(myLat,myLng,TStationsLookup[key].TLat,TStationsLookup[key].TLong)
       if(closest == -1 || d<getDistance(myLat,myLng,TStationsLookup[closest].TLat,TStationsLookup[closest].TLong))
       {
-        closest = i;
+        closest = key;
       }
 
     }
