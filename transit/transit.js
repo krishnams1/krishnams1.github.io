@@ -485,7 +485,7 @@ function parsePredictions(station_key)
         {
           infoTable[j] = {
             "Destination" : TSchedule.schedule[i].Destination,
-            "Time" : Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"min "+Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"s "
+            "Time" : Math.floor(TSchedule.schedule[i].Predictions[j].Seconds/60)+"min "+TSchedule.schedule[i].Predictions[j].Seconds%60+"s "
           }
         }
       }
@@ -497,7 +497,7 @@ function parseTable()
 {
 
    predTable = new String();
-   predTable = "Destination      Time <br>"
+   predTable = "Destination           Time <br>"
 
    for(i=0;i<infoTable.length;i++)
    {
@@ -506,8 +506,6 @@ function parseTable()
 
    return predTable;
 }
-
-
 
 
 /* Draws polylines for Tstations, handles fork on Red line (messy, would make cleaner later) */
