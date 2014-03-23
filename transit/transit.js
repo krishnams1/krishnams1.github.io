@@ -461,8 +461,6 @@ function createTLocations()
           });
 
           parsePredictions(key);
-          parseTable();
-          console.log("hello! this is the table: "+predTable);
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "<u>"+TStationsLookup[key].Station+"</u><br> Predictions (Destination - Time) <br><br>"+predTable
           });
@@ -491,6 +489,9 @@ function parsePredictions(station_key)
         }
       }
     }
+    // Make infoTable into string for marker
+    parseTable();
+
 }
 
 /* Make information from infoTable in parsePredictions into readable table for marker */
