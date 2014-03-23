@@ -384,8 +384,8 @@ function requestSched()
 {
   request =  new XMLHttpRequest();
   request.open("GET", "http://mbtamap.herokuapp.com/mapper/rodeo.json",true);
-  request.send(null);
   request.onreadystatechange = parseSched;
+  request.send(null);
 }
 
 
