@@ -499,7 +499,6 @@ function drawLine()
           polyLine_color = '#FFA500';
           break;
       default: 
-          alert("Something went wrong!");
           break;
   }
 
