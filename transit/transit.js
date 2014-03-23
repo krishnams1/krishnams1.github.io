@@ -460,9 +460,10 @@ function createTLocations()
           });
 
           parsePredictions(key);
+
           curMarker['infoWindow'] = new google.maps.InfoWindow({
             content: "This Station is: "+TStationsLookup[key].Station+"<br> Predictions: <br>"
-            +parseTable
+            +parseTable()
           });
           
           google.maps.event.addListener(curMarker, 'click', function() {
