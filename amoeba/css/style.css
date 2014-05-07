@@ -937,6 +937,15 @@ a.scrollup:hover{
 .social-network a.icoRss:hover {
 	background-color: #F56505;
 }
+
+.social-network a.icoEmail:hover {
+	background-color: #000000;
+}
+
+.social-network a.icoGithub:hover{
+	background-color: #663096;
+}
+
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
 }
@@ -953,7 +962,7 @@ a.scrollup:hover{
 	background-color:#007bb7;
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, 
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoGoogle:hover i, .social-network a.icoEmail:hover, .social-network a.icoGithub:hover , .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
